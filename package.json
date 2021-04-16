@@ -1,0 +1,38 @@
+{
+  "name": "electron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "electron-builder build --w"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^9.1.0",
+    "electron-builder": "^22.8.1"
+  },
+  "build": {
+    "productName": "花吱",
+    "appId": "com.huazhi.publicRoom",
+    "copyright": "huazhi publicRoom",
+    "directories": {
+      "output": "build"
+    },
+    "win": {
+      "icon": "./static/img/logo.png"
+    },
+    "mac": {
+      "icon": "./static/img/logo.png"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowElevation": true,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    }
+  }
+}
